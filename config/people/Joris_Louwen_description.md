@@ -1,0 +1,8 @@
+---
+name: "Joris Louwen"
+role: "Research assistant"
+imgs: []
+---
+Joris finished his two Master’s degrees in Bioinformatics and Biotechnology at Wageningen University in 2020. During his first MSc thesis, he gained an interest in studying specialised metabolites and the biosynthetic gene clusters (BGCs) that encode them, under supervision of Dr Marnix Medema, Dr Justin van der Hooft and Dr Satria Kautsar. After that, Joris continued to be involved in this field in his second thesis with Dr Michelle Schorn and Catarina Loureiro to unravel the cryptic biosynthesis of marine sponge metabolites through metagenome mining techniques. In his final MSc internship, Joris worked at the Netherlands eScience Center with Dr Florian Huber on machine learning techniques to analyse and annotate MS/MS spectra.<br/><br/>
+
+Since the start of 2021, Joris is working as a research assistant in the Van Der Hooft Computational Metabolomics Lab on the iOMEGA project, in collaboration with Dr Marnix Medema and the Netherlands eScience Center. He focusses on the integration of genome and metabolome mining to link BGCs and their metabolic products to prioritise the discovery of novel specialised metabolites, connect them to their producing strains, and uncover their ecological roles in complex microbial communities. Joris is involved in the development of novel feature-based scores in the NPLinker framework, the unsupervised subcluster discovery tool iPRESTO to infer substructure information from genomic sequence, and improving mass spectral embedding techniques for the annotation of MS/MS spectra.<br/><br/>
