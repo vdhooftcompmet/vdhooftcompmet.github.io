@@ -6,7 +6,7 @@ import NewsCard from "../components/NewsCard";
 export default function NewsArchive() {
   return (
     <Stack spacing={2}>
-      <Typography variant="h4">News Archive</Typography>
+      <Typography variant="h4">News archive</Typography>
       <Grid container spacing={2}>
         {allNews.map(n => (
           <Grid key={n.slug} item xs={12} md={6} lg={4}>

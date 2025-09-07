@@ -1,0 +1,16 @@
+---
+id: anna-marie-seelen
+name: Anna-Marie Seelen
+role: MSc student
+status: alumni
+affiliations: []
+email:
+portrait: /images/people/anna-marie-seelen.jpg # REQUIRED
+areas: []
+start:
+end:
+links:
+
+---
+
+During her master thesis and internship in the field of Food Chemistry at Wageningen University, Anna-Marie focussed on laboratory analysis of samples using mass spectrometry. Now, however, she wants to focus more on the laboratory data analysis instead of acquiring data in the laboratory herself. To gain more experience in laboratory data analysis Anna-Marie is doing her thesis at the Computational Metabolomics group. The thesis project topic will be the annotation and identification of metabolites in urine LC-MS/MS data using machine learning and other approaches. During this thesis she will be supervised by Justin and Niek along with Elena Chekmeneva from the Imperial College London as well as the National Phenome Center, both situated in London, UK.

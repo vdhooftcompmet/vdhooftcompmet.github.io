@@ -1,4 +1,3 @@
-// src/lib/loadContent.js
 import matter from "gray-matter";
 
 function normalizeDate(d) {
@@ -10,14 +9,15 @@ function normalizeDate(d) {
 
 // --- NEWS ---
 const newsRaw = import.meta.glob("../content/news/*.md", {
-  as: "raw",
+  query: "?raw",
+  import: "default",
   eager: true
 });
 
 export const allNews = Object.entries(newsRaw)
   .map(([path, raw]) => {
     const { data, content } = matter(raw);
-    const date = normalizeDate(data.date); // <-- normalize here
+    const date = normalizeDate(data.date);
     return { ...data, date, content, slug: data.id, _path: path };
   })
   .sort((a, b) => {
@@ -28,7 +28,8 @@ export const allNews = Object.entries(newsRaw)
 
 // --- PEOPLE ---
 const peopleRaw = import.meta.glob("../content/people/*.md", {
-  as: "raw",
+  query: "?raw",
+  import: "default",
   eager: true
 });
 
@@ -37,8 +38,44 @@ export const allPeople = Object.entries(peopleRaw).map(([path, raw]) => {
   if (!data.portrait) {
     throw new Error(`Missing "portrait" in ${path}`);
   }
-  return { ...data, content, slug: data.id, _path: path };
+  const links = { ...(data.links || {}) };
+  return { ...data, links, content, slug: data.id, _path: path };
 }).sort((a, b) => (a.name || "").localeCompare(b.name || ""));
 
 export const currentPeople = allPeople.filter(p => (p.status || "current") === "current");
 export const alumni = allPeople.filter(p => p.status === "alumni");
+export const collaborators = allPeople.filter(p => p.status === "collaborator");
+
+// --- PAGES ---
+const pagesRaw = import.meta.glob("../content/pages/*.md", {
+  query: "?raw",
+  import: "default",
+  eager: true
+});
+
+export const pagesById = Object.fromEntries(
+  Object.entries(pagesRaw).map(([path, raw]) => {
+    const { data, content } = matter(raw);
+    const id = data.id || path.split("/").pop().replace(/\.md$/, "");
+    return [id, { ...data, content, slug: data.slug || id, _path: path }];
+  })
+);
+
+// --- BLOGS ---
+const blogsRaw = import.meta.glob("../content/blogs/*.md", {
+  query: "?raw",
+  import: "default",
+  eager: true
+});
+
+export const allBlogs = Object.entries(blogsRaw)
+  .map(([path, raw]) => {
+    const { data, content } = matter(raw);
+    const date = normalizeDate(data.date);
+    return { ...data, date, content, slug: data.id, _path: path };
+  })
+  .sort((a, b) => {
+    const da = a.date ? new Date(a.date).getTime() : 0;
+    const db = b.date ? new Date(b.date).getTime() : 0;
+    return db - da;
+  });

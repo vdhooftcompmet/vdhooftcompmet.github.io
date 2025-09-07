@@ -10,7 +10,7 @@ export default function NewsCard({ item }) {
         {item.cover && (
           <CardMedia component="img" height="160" image={item.cover} alt={item.title} />
         )}
-        <CardContent>
+        <CardContent sx={{ height: item.cover ? 160 : "auto" }}>
           <Stack spacing={0.5}>
             <Typography variant="overline">
               {item.date ? format(parseISO(item.date), "PPP") : ""}
