@@ -62,52 +62,54 @@ export default function Home() {
               The Van der Hooft Group uses the plant root microbiome and human food metabolome as prime applications since they represent complex metabolite mixtures full of yet unknown metabolic matter that once elucidated will boost our insights in molecular mechanisms underpinning the regulation of growth, development, and health.
             </Typography>
           </Box>
-          <Grid container spacing={2} sx={{ mt: 1 }}>
-              {[
-                { title: "Research pillar I", subtitle: "Machine learning to read metabolite structure from spectra", img: imgResearchPillar1, to: "pages/research-pillar-1" },
-                { title: "Research pillar II", subtitle: "Chemically-informed comparative metabolomics to prioritize chemistry", img: imgResearchPillar2, to: "pages/research-pillar-2" },
-                { title: "Research pillar III", subtitle: "Linked omics and activity profiles to gain functional insights", img: imgResearchPillar3, to: "pages/research-pillar-3" },
-              ].map(({ title, subtitle, img, to }) => (
-                <Grid key={title} item xs={12} sm={6} md={4}>
-                  <Box
-                    component={Link}
-                    to={to}
-                    sx={{
-                      textDecoration: "none",
-                      color: "inherit",
-                      display: "block",
-                      borderRadius: 2,
-                      overflow: "hidden",
-                      boxShadow: 4,
-                      "&:hover": { boxShadow: 8 },
-                      height: "100%",
-                    }}
-                  >
+          <Box>
+            <Grid container spacing={2} sx={{ mt: 1 }}>
+                {[
+                  { title: "Research pillar I", subtitle: "Machine learning to read metabolite structure from spectra", img: imgResearchPillar1, to: "pages/research-pillar-1" },
+                  { title: "Research pillar II", subtitle: "Chemically-informed comparative metabolomics to prioritize chemistry", img: imgResearchPillar2, to: "pages/research-pillar-2" },
+                  { title: "Research pillar III", subtitle: "Linked omics and activity profiles to gain functional insights", img: imgResearchPillar3, to: "pages/research-pillar-3" },
+                ].map(({ title, subtitle, img, to }) => (
+                  <Grid key={title} item xs={12} sm={6} md={4}>
                     <Box
-                      component="img"
-                      src={img}
-                      alt={title}
-                      loading="lazy"
+                      component={Link}
+                      to={to}
                       sx={{
-                        width: "100%",
-                        height: 240,
-                        objectFit: "cover",
+                        textDecoration: "none",
+                        color: "inherit",
                         display: "block",
-                        p: 2,
+                        borderRadius: 2,
+                        overflow: "hidden",
+                        boxShadow: 4,
+                        "&:hover": { boxShadow: 8 },
+                        height: "100%",
                       }}
-                    />
-                    <Box sx={{ p: 2, bgcolor: "background.paper", flexDirection: "column", gap: 0.5, display: "flex" }}>
-                      <Typography variant="h6" align="center" fontWeight="bold">
-                        {title}
-                      </Typography>
-                      <Typography variant="h7" align="center">
-                        {subtitle}
-                      </Typography>
+                    >
+                      <Box
+                        component="img"
+                        src={img}
+                        alt={title}
+                        loading="lazy"
+                        sx={{
+                          width: "100%",
+                          height: 240,
+                          objectFit: "cover",
+                          display: "block",
+                          p: 2,
+                        }}
+                      />
+                      <Box sx={{ p: 2, bgcolor: "background.paper", flexDirection: "column", gap: 0.5, display: "flex" }}>
+                        <Typography variant="h6" align="center" fontWeight="bold">
+                          {title}
+                        </Typography>
+                        <Typography variant="h7" align="center">
+                          {subtitle}
+                        </Typography>
+                      </Box>
                     </Box>
-                  </Box>
-                </Grid>
-              ))}
-          </Grid>
+                  </Grid>
+                ))}
+            </Grid>
+          </Box>
         </Stack>
       </Paper>
 
