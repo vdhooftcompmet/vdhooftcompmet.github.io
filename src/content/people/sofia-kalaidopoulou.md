@@ -1,7 +1,7 @@
 ---
 id: sofia-kalaidopoulou
 name: Sofia Kalaidopoulou
-role: Role
+role: MSc student
 status: current
 affiliations: []
 email:
