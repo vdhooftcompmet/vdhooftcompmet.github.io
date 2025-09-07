@@ -10,7 +10,6 @@ areas: []
 start:
 end:
 links:
-  Website: https:///example.com
 
 ---
 
