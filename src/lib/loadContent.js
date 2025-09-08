@@ -33,6 +33,22 @@ const peopleRaw = import.meta.glob("../content/people/*.md", {
   eager: true
 });
 
+// Define seniority order
+const roleOrder = [
+  "professor",
+  "associate professor",
+  "assistant professor",
+  "postdoctoral researcher",
+  "visiting postdoctoral researcher",
+  "phd candidate",
+  "visiting phd candidate",
+  "msc student",
+  "bsc student"
+];
+
+// Convert into a lookup map for quick sorting
+const roleRank = Object.fromEntries(roleOrder.map((r, i) => [r, i]));
+
 export const allPeople = Object.entries(peopleRaw).map(([path, raw]) => {
   const { data, content } = matter(raw);
   if (!data.portrait) {
@@ -40,7 +56,20 @@ export const allPeople = Object.entries(peopleRaw).map(([path, raw]) => {
   }
   const links = { ...(data.links || {}) };
   return { ...data, links, content, slug: data.id, _path: path };
-}).sort((a, b) => (a.name || "").localeCompare(b.name || ""));
+}).sort((a, b) => {
+  // Normalize roles to lowercase
+  const roleA = (a.role || "").toLowerCase();
+  const roleB = (b.role || "").toLowerCase();
+
+  // Compare by rank (fall back to very large number if not in list)
+  const rankA = roleRank[roleA] ?? Number.MAX_SAFE_INTEGER;
+  const rankB = roleRank[roleB] ?? Number.MAX_SAFE_INTEGER;
+
+  if (rankA !== rankB) return rankA - rankB;
+
+  // If same role rank, sort by name alphabetically
+  return (a.name || "").localeCompare(b.name || "");
+});
 
 export const currentPeople = allPeople.filter(p => (p.status || "current") === "current");
 export const alumni = allPeople.filter(p => p.status === "alumni");

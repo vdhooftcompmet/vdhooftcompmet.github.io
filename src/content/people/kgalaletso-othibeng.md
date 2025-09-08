@@ -3,7 +3,7 @@ id: kgalaletso-othibeng
 name: Kgalaletso Othibeng
 role: PhD candidate
 status: current
-affiliations: []
+affiliations: ["University of Johannesburg"]
 email:
 portrait: /images/people/kgalaletso-othibeng.jpg # REQUIRED
 areas: ["Biochemistry", "Natural products", "Molecular networking", "Bioinformtics tools", "Plant metabolomics"]

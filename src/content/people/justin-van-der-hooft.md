@@ -3,7 +3,7 @@ id: justin-van-der-hooft
 name: Justin van der Hooft
 role: Assistant professor
 status: current
-affiliations: ["Wageningen University & Research", "Advisory Board NAICONS Srl"]
+affiliations: ["Wageningen University & Research", "Advisory Board NAICONS Srl", "Visiting Professor, Department of Biochemistry, University of Johannesburg"]
 email:
 portrait: /images/people/justin-van-der-hooft.jpg # REQUIRED
 areas: []

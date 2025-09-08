@@ -3,7 +3,7 @@ id: david-meijer
 name: David Meijer
 role: PhD candidate
 status: current
-affiliations: ["Wageningen University & Research"]
+affiliations: ["Wageningen University"]
 email: david.meijer@wur.nl
 portrait: /images/people/david-meijer.jpg
 areas: []

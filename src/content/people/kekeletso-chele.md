@@ -2,8 +2,8 @@
 id: kekeletso-chele
 name: Kekeletso Chele
 role: PhD candidate
-status: current
-affiliations: []
+status: alumni
+affiliations: ["University of Johannesburg"]
 email:
 portrait: /images/people/kekeletso-chele.jpg # REQUIRED
 areas: ["Computational tools", "Natural products/medicinal plants", "Plant metabolomics"]
