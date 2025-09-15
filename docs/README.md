@@ -10,3 +10,5 @@ All content items are **Markdown-based** and will automatically render on the si
 👉 **Images**: 
 All images used in content should be placed inside the `public/images/` folder in a subfolder that matches the content type (e.g. `images/news/`, `images/people/`, `images/blogs/`).  
 Reference them in your markdown using relative paths.
+
+Make sure to downsize images for web use to optimize loading times!
