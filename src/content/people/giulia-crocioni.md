@@ -2,7 +2,7 @@
 id: giulia-crocioni
 name: Giulia Crocioni
 role: eScience software engineer
-status: current
+status: alumni
 affiliations: []
 email:
 portrait: /images/people/giulia-crocioni.jpg # REQUIRED
