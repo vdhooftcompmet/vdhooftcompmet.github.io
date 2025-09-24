@@ -4,12 +4,14 @@ name: Elena Del Pup
 role: PhD candidate
 status: current
 affiliations: []
-email:
+email: elena.delpup@wur.nl
 portrait: /images/people/elena-del-pup.jpg # REQUIRED
 areas: []
 start:
 end:
-links:
+links: 
+    GitHub: https://github.com/elenadelpup
+    LinkedIn: https://www.linkedin.com/in/elena-del-pup-840805164/
 
 ---
 
