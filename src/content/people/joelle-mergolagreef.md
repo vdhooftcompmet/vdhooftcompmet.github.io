@@ -10,6 +10,7 @@ areas: []
 start:
 end:
 links:
+  LinkedIn: https://uk.linkedin.com/in/joellemg
 
 ---
 
