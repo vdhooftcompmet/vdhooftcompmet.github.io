@@ -2,7 +2,7 @@
 id: niek-de-jonge
 name: Niek de Jonge
 role: PhD candidate
-status: current
+status: alumni
 affiliations: []
 email:
 portrait: /images/people/niek-de-jonge.jpg # REQUIRED
