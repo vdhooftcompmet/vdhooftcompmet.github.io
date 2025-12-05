@@ -20,6 +20,8 @@ const scroll = keyframes`
  * - Fixed card width ensures a seamless 50% translate loop.
  * - Pauses on hover. Respects reduced-motion.
  * - Fades left/right edges into the page background.
+ * - Uses name-based alphabetical order to sort profiles.
+ * NOTE: haven't checked what happens when we have no, or too little profiles to fill the marquee at least once...
  */
 export default function PeopleStream({
   title = "People",
@@ -81,9 +83,8 @@ export default function PeopleStream({
         {/* The moving track (two explicit sequences for a seamless loop) */}
         <Box
           sx={{
-            // Make the track shrink-wrap to its children so 50% == one sequence
             display: "inline-flex",
-            width: "max-content",        // key change: no fixed "200%"
+            width: "max-content",
             flexWrap: "nowrap",
             whiteSpace: "nowrap",
             gap: `${gap}px`,
