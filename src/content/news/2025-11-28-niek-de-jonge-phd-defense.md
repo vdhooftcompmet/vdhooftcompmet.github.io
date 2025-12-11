@@ -4,7 +4,7 @@ title: Niek successfully defends his PhD
 date: 2025-11-28
 authors: ["Group"]
 summary: We are extremely proud to announce that Niek de Jonge has successfully defended his PhD thesis.
-cover: /images/general/news.jpg
+cover: /images/news/PhD Defence Niek.jpg
 tags: ["people"]
 ---
 
