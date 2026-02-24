@@ -3,7 +3,7 @@ id: elena-ferri
 name: Elena Ferri
 role: Visiting PhD candidate
 status: current
-affiliations: ["UNiversity of Modena and Reggio Emilia (Italy)", "Wageningen University"]
+affiliations: ["University of Modena and Reggio Emilia (Italy)", "Wageningen University"]
 email:
 portrait: /images/people/elena-ferri.jpg # REQUIRED
 areas: []
