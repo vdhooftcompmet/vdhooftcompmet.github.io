@@ -2,7 +2,7 @@
 id: mitja-zdouc
 name: Mitja Zdouc
 role: Postdoctoral researcher
-status: current
+status: alumni
 affiliations: []
 email:
 portrait: /images/people/mitja-zdouc.jpg # REQUIRED
