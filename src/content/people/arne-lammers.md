@@ -2,7 +2,7 @@
 id: arne-lammers
 name: Arne Lammers
 role: MSc Student
-status: current
+status: alumni
 affiliations: []
 email:
 portrait: /images/people/arne-lammers.jpg

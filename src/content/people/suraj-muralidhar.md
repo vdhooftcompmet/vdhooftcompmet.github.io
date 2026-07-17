@@ -2,7 +2,7 @@
 id: suraj-muralidhar
 name: Suraj Muralidhar
 role: Visiting PhD candidate
-status: current
+status: alumni
 affiliations: []
 email:
 portrait: /images/people/suraj-muralidhar.jpg # REQUIRED

@@ -2,7 +2,7 @@
 id: paula-derksen-macruz
 name: Paula Derksen Macruz
 role: Visiting PhD candidate
-status: current
+status: alumni
 affiliations: ["State University of Maringá (UEM), Brazil", "Wageningen University"]
 email:
 portrait: /images/people/paula-derksen-macruz.jpg # REQUIRED

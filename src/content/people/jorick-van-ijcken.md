@@ -2,7 +2,7 @@
 id: jorick-van-ijcken
 name: Jorick van IJcken
 role: MSc student
-status: current
+status: alumni
 affiliations: []
 email:
 portrait: /images/people/jorick-van-ijcken.jpg # REQUIRED
