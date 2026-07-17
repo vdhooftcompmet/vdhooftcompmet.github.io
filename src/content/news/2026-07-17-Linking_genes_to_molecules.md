@@ -1,5 +1,5 @@
 ---
-id: 2026-05-28-EUSM2026
+id: 2026-07-17-Linking_genes_to_molecules
 title: "Linking genes to molecules: teaching BiG-SCAPE, FERMO and NPLinker at E-NICHE's multiomics training course"
 date: 2026-07-17
 authors: ["Joelle Mergola Greef"]
